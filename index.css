@@ -1,0 +1,96 @@
+body{
+   background-color: yellow;
+
+}
+ol li{
+   display: flex;
+   flex-flow: row wrap;
+}
+.box-container{
+   display: flex;
+   align-content: space-between;
+   align-items: center;
+   justify-content: center; 
+}
+.num{
+   padding-top: 140px;
+   margin-right: 20px;
+}
+.item{
+   height: 100px;
+   width: 100px;
+  padding: 1rem;
+   margin: 30px;
+   border: 1px solid black;
+}
+.item1{
+   background-color: blue;
+  animation-name: item-item1;
+  animation-duration: 4s;
+ animation-iteration-count: infinite;
+}
+@keyframes item-item1{
+   20%{
+      transform: skew(20deg);
+   }
+   50%{
+      transform: skew(-20deg);
+   } 
+}
+.item2{
+   background-color: rgb(11, 80, 80);
+   animation-name: item-item2;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+@keyframes item-item2{
+   40%{
+     transform: skewy(20deg);
+   }
+   80%{
+      transform: skewy(-20deg);}
+   
+}
+.item3{
+   background-color: rgb(40, 11, 66);
+   animation-name: item-item3;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+@keyframes item-item3{
+ 100%{
+    transform: rotate(360deg); }
+}
+.box1{
+   background-color: rgb(11, 124, 124);
+   animation-name: item-box1;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+}
+@keyframes item-box1{
+   from{
+       transform: scaley(0.1);
+   }
+}
+.box2{
+   background-color: rgb(151, 36, 36);
+   animation-name: item-box2;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+}
+@keyframes item-box2{
+   from{
+       transform: scalex(0.1);
+   }
+}
+.box3{
+   background-color: green;
+   animation-name: item-box3;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+}
+@keyframes item-box3{
+  30%{
+     transform: rotate(120deg);
+  }
+}

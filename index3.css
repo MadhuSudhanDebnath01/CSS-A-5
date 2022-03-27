@@ -1,0 +1,64 @@
+.sky{
+    background-image: url(./sky\ \(2\)\ \(1\).jpg);
+    height: 500px;
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+}
+.city{
+    top: 250px;
+    z-index:1;
+    position: absolute;
+    }
+.box1{animation: city-road 50s  linear  infinite;   
+}
+@keyframes city{
+    100%{transform: translateX(50px);}
+}
+.road{
+   
+    position: absolute;
+    height: 100px;
+    top: 500px;
+    z-index: 2;
+   }
+.box2{
+    animation: city-road 4s  linear  infinite;
+    }
+@keyframes city-road{
+  100%{
+     transform: scaleX(2);
+  }
+}
+.item{
+     z-index: 2;
+    position: absolute;
+}
+.car{
+    top: 375px;
+    margin-left: 200px;
+}
+.flag{
+    top:368px;
+    margin-left: 575px;
+}
+.sun{
+    top: 50px;
+    margin-left: 60vw; 
+}
+.wheel{
+    top:479px;
+    margin-left:244px;
+}
+.wheel2{
+    top:480px;
+    margin-left: 539px;
+}
+.box3{
+ animation: wheel-wheel2 1s  linear  infinite;
+  }
+@keyframes wheel-wheel2{
+ 100%{
+     transform: rotate(360deg);
+ }
+}
